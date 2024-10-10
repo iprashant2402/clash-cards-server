@@ -1,17 +1,23 @@
-// File: src/server.ts
-import { httpServer, expressApp, socketsServer } from "./utils/server";
-import express from "express";
-import cors from "cors";
-import { socketController } from "./websockets/socketServer";
+import "reflect-metadata";
+import { Container } from "typedi";
+import { createServer } from "http";
+import { Server } from "socket.io";
+import { SocketController } from "./controllers/socket.controller";
+import { configureContainer } from "./config/container";
 
-const port = process.env.PORT || 3001;
+// Configure the dependency injection container
+configureContainer();
 
-expressApp.use(express.json());
-expressApp.use(express.urlencoded({ extended: true }));
-expressApp.use(cors());
+const httpServer = createServer();
+const io = new Server(httpServer);
 
-socketsServer.on("connection", socketController);
+const socketController = Container.get(SocketController);
 
-httpServer.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+io.on("connection", (socket) => {
+  socketController.handleConnection(socket);
+});
+
+const PORT = process.env.PORT || 3000;
+httpServer.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
