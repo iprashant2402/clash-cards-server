@@ -1,0 +1,662 @@
+[
+  {
+    "id": "e596f97e-86b9-45f8-837d-7d0a7125a939",
+    "name": "Aldren",
+    "attributes": {
+      "rank": 1,
+      "power": 594,
+      "speed": 39,
+      "intelligence": 86,
+      "agility": 90,
+      "endurance": 364
+    }
+  },
+  {
+    "id": "b04c4f69-3cd9-43e0-ade5-a0baae342c82",
+    "name": "Thalor",
+    "attributes": {
+      "rank": 2,
+      "power": 36,
+      "speed": 89,
+      "intelligence": 2,
+      "agility": 49,
+      "endurance": 123
+    }
+  },
+  {
+    "id": "0749bff0-26e2-4d5f-8646-970d0f008004",
+    "name": "Eldrin",
+    "attributes": {
+      "rank": 3,
+      "power": 240,
+      "speed": 40,
+      "intelligence": 49,
+      "agility": 77,
+      "endurance": 200
+    }
+  },
+  {
+    "id": "3129a86f-903b-4d9d-916d-817d09244a09",
+    "name": "Lyra",
+    "attributes": {
+      "rank": 4,
+      "power": 511,
+      "speed": 67,
+      "intelligence": 96,
+      "agility": 26,
+      "endurance": 656
+    }
+  },
+  {
+    "id": "3446a5f7-0ecf-4e66-926a-096e1b0b66d3",
+    "name": "Gorath",
+    "attributes": {
+      "rank": 5,
+      "power": 853,
+      "speed": 11,
+      "intelligence": 16,
+      "agility": 96,
+      "endurance": 416
+    }
+  },
+  {
+    "id": "05e32eed-529a-4373-b028-f7fc5e40f540",
+    "name": "Selene",
+    "attributes": {
+      "rank": 6,
+      "power": 802,
+      "speed": 74,
+      "intelligence": 29,
+      "agility": 22,
+      "endurance": 522
+    }
+  },
+  {
+    "id": "cb3d5790-40a6-4c53-a6c3-f9cfbf6145cd",
+    "name": "Vira",
+    "attributes": {
+      "rank": 7,
+      "power": 729,
+      "speed": 71,
+      "intelligence": 53,
+      "agility": 21,
+      "endurance": 942
+    }
+  },
+  {
+    "id": "ea72426e-4cf4-4587-9a46-21401c7c825c",
+    "name": "Torin",
+    "attributes": {
+      "rank": 8,
+      "power": 212,
+      "speed": 93,
+      "intelligence": 11,
+      "agility": 36,
+      "endurance": 477
+    }
+  },
+  {
+    "id": "13d2cb63-a5dd-426f-95cf-6683e2a087c2",
+    "name": "Xantha",
+    "attributes": {
+      "rank": 9,
+      "power": 758,
+      "speed": 18,
+      "intelligence": 70,
+      "agility": 1,
+      "endurance": 141
+    }
+  },
+  {
+    "id": "c8f013cd-96e8-46f0-bfd0-54a971014857",
+    "name": "Keldor",
+    "attributes": {
+      "rank": 10,
+      "power": 320,
+      "speed": 77,
+      "intelligence": 81,
+      "agility": 19,
+      "endurance": 477
+    }
+  },
+  {
+    "id": "a57ced4f-c967-4db6-a859-1b3a8cc0bb28",
+    "name": "Zylra",
+    "attributes": {
+      "rank": 11,
+      "power": 241,
+      "speed": 43,
+      "intelligence": 2,
+      "agility": 13,
+      "endurance": 198
+    }
+  },
+  {
+    "id": "e637a74b-7ddf-436f-8e9b-a3dfe7602fee",
+    "name": "Darion",
+    "attributes": {
+      "rank": 12,
+      "power": 547,
+      "speed": 52,
+      "intelligence": 65,
+      "agility": 9,
+      "endurance": 343
+    }
+  },
+  {
+    "id": "38e66339-e172-4c4a-bb4c-f4c5c4fc68cb",
+    "name": "Myrrin",
+    "attributes": {
+      "rank": 13,
+      "power": 449,
+      "speed": 5,
+      "intelligence": 19,
+      "agility": 56,
+      "endurance": 326
+    }
+  },
+  {
+    "id": "2ba6ed4a-0335-4584-b28c-43244e710398",
+    "name": "Yara",
+    "attributes": {
+      "rank": 14,
+      "power": 195,
+      "speed": 26,
+      "intelligence": 67,
+      "agility": 66,
+      "endurance": 487
+    }
+  },
+  {
+    "id": "b05ea247-2ca8-4db8-ac43-1ab3812f1f03",
+    "name": "Brenna",
+    "attributes": {
+      "rank": 15,
+      "power": 553,
+      "speed": 37,
+      "intelligence": 7,
+      "agility": 94,
+      "endurance": 25
+    }
+  },
+  {
+    "id": "3fba0d10-9a8d-49c3-a949-24d1e44ed74f",
+    "name": "Fenris",
+    "attributes": {
+      "rank": 16,
+      "power": 734,
+      "speed": 48,
+      "intelligence": 50,
+      "agility": 90,
+      "endurance": 478
+    }
+  },
+  {
+    "id": "05527491-ef0e-4bdd-b4ea-d9487c97914c",
+    "name": "Oryn",
+    "attributes": {
+      "rank": 17,
+      "power": 677,
+      "speed": 70,
+      "intelligence": 61,
+      "agility": 54,
+      "endurance": 707
+    }
+  },
+  {
+    "id": "878d80a9-cbd0-45bc-b329-f715cbcd1b5b",
+    "name": "Haldir",
+    "attributes": {
+      "rank": 18,
+      "power": 112,
+      "speed": 47,
+      "intelligence": 47,
+      "agility": 72,
+      "endurance": 444
+    }
+  },
+  {
+    "id": "11b76f63-6bfe-4b50-985e-68a9c558a61f",
+    "name": "Vanya",
+    "attributes": {
+      "rank": 19,
+      "power": 873,
+      "speed": 5,
+      "intelligence": 44,
+      "agility": 84,
+      "endurance": 612
+    }
+  },
+  {
+    "id": "52a1b825-9b3b-4596-81af-a17a077fa990",
+    "name": "Kyra",
+    "attributes": {
+      "rank": 20,
+      "power": 717,
+      "speed": 18,
+      "intelligence": 46,
+      "agility": 57,
+      "endurance": 683
+    }
+  },
+  {
+    "id": "153e1c7d-c82d-4e10-bfe2-62662e2cbeac",
+    "name": "Lorcan",
+    "attributes": {
+      "rank": 21,
+      "power": 113,
+      "speed": 70,
+      "intelligence": 18,
+      "agility": 88,
+      "endurance": 78
+    }
+  },
+  {
+    "id": "4fe16e86-a242-4e4f-afb2-230c35a43f20",
+    "name": "Azura",
+    "attributes": {
+      "rank": 22,
+      "power": 845,
+      "speed": 86,
+      "intelligence": 3,
+      "agility": 21,
+      "endurance": 930
+    }
+  },
+  {
+    "id": "733c9d93-027d-4f31-8ae2-a33c260c9587",
+    "name": "Zarek",
+    "attributes": {
+      "rank": 23,
+      "power": 299,
+      "speed": 40,
+      "intelligence": 38,
+      "agility": 44,
+      "endurance": 806
+    }
+  },
+  {
+    "id": "7e471cee-2adc-45c6-8053-624562890354",
+    "name": "Nimue",
+    "attributes": {
+      "rank": 24,
+      "power": 171,
+      "speed": 18,
+      "intelligence": 46,
+      "agility": 86,
+      "endurance": 567
+    }
+  },
+  {
+    "id": "7554f84b-d4fb-4a7a-acfb-c56d0043108b",
+    "name": "Caelan",
+    "attributes": {
+      "rank": 25,
+      "power": 695,
+      "speed": 7,
+      "intelligence": 68,
+      "agility": 28,
+      "endurance": 150
+    }
+  },
+  {
+    "id": "1aa1d098-76a5-4bfa-ab17-05bc1eb761ae",
+    "name": "Isolde",
+    "attributes": {
+      "rank": 26,
+      "power": 449,
+      "speed": 62,
+      "intelligence": 69,
+      "agility": 14,
+      "endurance": 920
+    }
+  },
+  {
+    "id": "8338ec57-57b9-426b-ae89-bbe4eeac0eb9",
+    "name": "Dorin",
+    "attributes": {
+      "rank": 27,
+      "power": 18,
+      "speed": 59,
+      "intelligence": 96,
+      "agility": 15,
+      "endurance": 781
+    }
+  },
+  {
+    "id": "fd971b24-e11b-4d9b-aefd-029ab40dd369",
+    "name": "Thalia",
+    "attributes": {
+      "rank": 28,
+      "power": 678,
+      "speed": 90,
+      "intelligence": 68,
+      "agility": 98,
+      "endurance": 403
+    }
+  },
+  {
+    "id": "bfbdba69-dd91-4e1d-b07d-16195350a581",
+    "name": "Zephyra",
+    "attributes": {
+      "rank": 29,
+      "power": 940,
+      "speed": 94,
+      "intelligence": 46,
+      "agility": 51,
+      "endurance": 899
+    }
+  },
+  {
+    "id": "60f2f1b9-c397-4184-adf4-b57a706850d1",
+    "name": "Kelvin",
+    "attributes": {
+      "rank": 30,
+      "power": 815,
+      "speed": 68,
+      "intelligence": 42,
+      "agility": 60,
+      "endurance": 378
+    }
+  },
+  {
+    "id": "e1dcb60d-458d-476b-9a4d-1f4cf02bd81c",
+    "name": "Solara",
+    "attributes": {
+      "rank": 31,
+      "power": 977,
+      "speed": 96,
+      "intelligence": 13,
+      "agility": 69,
+      "endurance": 899
+    }
+  },
+  {
+    "id": "89eed8a1-fddf-4c61-841a-1c857f81b3f2",
+    "name": "Malak",
+    "attributes": {
+      "rank": 32,
+      "power": 304,
+      "speed": 69,
+      "intelligence": 42,
+      "agility": 88,
+      "endurance": 426
+    }
+  },
+  {
+    "id": "2edac479-d3c5-4fb9-8da6-b77259397e00",
+    "name": "Ithil",
+    "attributes": {
+      "rank": 33,
+      "power": 121,
+      "speed": 47,
+      "intelligence": 34,
+      "agility": 73,
+      "endurance": 244
+    }
+  },
+  {
+    "id": "dfc973c5-8eec-4a24-a142-805a4f352dd9",
+    "name": "Galen",
+    "attributes": {
+      "rank": 34,
+      "power": 102,
+      "speed": 56,
+      "intelligence": 81,
+      "agility": 40,
+      "endurance": 564
+    }
+  },
+  {
+    "id": "f4d8e615-b6b7-4b09-86df-b2740e844f6c",
+    "name": "Elara",
+    "attributes": {
+      "rank": 35,
+      "power": 688,
+      "speed": 7,
+      "intelligence": 78,
+      "agility": 88,
+      "endurance": 914
+    }
+  },
+  {
+    "id": "0af7235e-8939-4a42-8b0b-bfa342f53982",
+    "name": "Vesper",
+    "attributes": {
+      "rank": 36,
+      "power": 188,
+      "speed": 9,
+      "intelligence": 60,
+      "agility": 40,
+      "endurance": 130
+    }
+  },
+  {
+    "id": "02295dd1-c415-4d91-88f3-2e2d5482bebc",
+    "name": "Leif",
+    "attributes": {
+      "rank": 37,
+      "power": 330,
+      "speed": 46,
+      "intelligence": 74,
+      "agility": 78,
+      "endurance": 502
+    }
+  },
+  {
+    "id": "aed2efd2-9aa8-4169-85fb-fc6abf78b098",
+    "name": "Draven",
+    "attributes": {
+      "rank": 38,
+      "power": 914,
+      "speed": 44,
+      "intelligence": 55,
+      "agility": 95,
+      "endurance": 65
+    }
+  },
+  {
+    "id": "bbbbf11d-9583-4a78-95f1-1f2d91e80413",
+    "name": "Kara",
+    "attributes": {
+      "rank": 39,
+      "power": 534,
+      "speed": 31,
+      "intelligence": 2,
+      "agility": 6,
+      "endurance": 716
+    }
+  },
+  {
+    "id": "e7411374-e0d6-4521-ab4d-cf45ecb68d00",
+    "name": "Ragnar",
+    "attributes": {
+      "rank": 40,
+      "power": 218,
+      "speed": 79,
+      "intelligence": 37,
+      "agility": 28,
+      "endurance": 884
+    }
+  },
+  {
+    "id": "f095a43e-3017-4d3e-8c4d-6891d802b0b8",
+    "name": "Tahlia",
+    "attributes": {
+      "rank": 41,
+      "power": 740,
+      "speed": 87,
+      "intelligence": 77,
+      "agility": 12,
+      "endurance": 715
+    }
+  },
+  {
+    "id": "3410282b-ec6d-41eb-af74-08b2c0bbad19",
+    "name": "Arwyn",
+    "attributes": {
+      "rank": 42,
+      "power": 629,
+      "speed": 85,
+      "intelligence": 38,
+      "agility": 36,
+      "endurance": 649
+    }
+  },
+  {
+    "id": "98fbeb5a-b008-4fe0-b09f-4d852b8bf2c2",
+    "name": "Galad",
+    "attributes": {
+      "rank": 43,
+      "power": 751,
+      "speed": 65,
+      "intelligence": 71,
+      "agility": 41,
+      "endurance": 631
+    }
+  },
+  {
+    "id": "afc1f3f4-f5ad-4ed8-a77a-f055517a8d2f",
+    "name": "Fiora",
+    "attributes": {
+      "rank": 44,
+      "power": 576,
+      "speed": 89,
+      "intelligence": 92,
+      "agility": 49,
+      "endurance": 651
+    }
+  },
+  {
+    "id": "5d9981d4-a938-436f-9776-1e7a375f0f90",
+    "name": "Nyx",
+    "attributes": {
+      "rank": 45,
+      "power": 198,
+      "speed": 86,
+      "intelligence": 33,
+      "agility": 74,
+      "endurance": 822
+    }
+  },
+  {
+    "id": "6f13111c-3f42-4d6e-93fe-e2e659e2bef3",
+    "name": "Aeris",
+    "attributes": {
+      "rank": 46,
+      "power": 41,
+      "speed": 13,
+      "intelligence": 87,
+      "agility": 39,
+      "endurance": 642
+    }
+  },
+  {
+    "id": "6650aaa1-d705-410b-9c71-1cce185aa37a",
+    "name": "Vorin",
+    "attributes": {
+      "rank": 47,
+      "power": 645,
+      "speed": 87,
+      "intelligence": 38,
+      "agility": 99,
+      "endurance": 754
+    }
+  },
+  {
+    "id": "2834e05f-df6a-4234-a6c6-1cfd26f6ffa8",
+    "name": "Cyrus",
+    "attributes": {
+      "rank": 48,
+      "power": 194,
+      "speed": 91,
+      "intelligence": 47,
+      "agility": 55,
+      "endurance": 634
+    }
+  },
+  {
+    "id": "6607109d-0512-4a4a-9c77-a72492caa664",
+    "name": "Ilyas",
+    "attributes": {
+      "rank": 49,
+      "power": 93,
+      "speed": 25,
+      "intelligence": 76,
+      "agility": 58,
+      "endurance": 711
+    }
+  },
+  {
+    "id": "3034d58e-5796-46f1-b541-3841fb5acf99",
+    "name": "Seren",
+    "attributes": {
+      "rank": 50,
+      "power": 486,
+      "speed": 89,
+      "intelligence": 36,
+      "agility": 73,
+      "endurance": 413
+    }
+  },
+  {
+    "id": "b614c1ab-365f-49dd-b2e2-e57cfb4118ca",
+    "name": "Vael",
+    "attributes": {
+      "rank": 51,
+      "power": 454,
+      "speed": 26,
+      "intelligence": 89,
+      "agility": 5,
+      "endurance": 465
+    }
+  },
+  {
+    "id": "adfc90c9-0b5b-4407-8e38-01e1a3c48ada",
+    "name": "Rune",
+    "attributes": {
+      "rank": 52,
+      "power": 17,
+      "speed": 42,
+      "intelligence": 15,
+      "agility": 75,
+      "endurance": 382
+    }
+  },
+  {
+    "id": "cafb6482-70e0-4416-92ad-5b67f3f50597",
+    "name": "Nira",
+    "attributes": {
+      "rank": 53,
+      "power": 422,
+      "speed": 4,
+      "intelligence": 31,
+      "agility": 87,
+      "endurance": 186
+    }
+  },
+  {
+    "id": "518e8c45-e923-4862-aacc-fb10db44375d",
+    "name": "Ryloth",
+    "attributes": {
+      "rank": 54,
+      "power": 801,
+      "speed": 76,
+      "intelligence": 91,
+      "agility": 22,
+      "endurance": 488
+    }
+  },
+  {
+    "id": "1ad3dd46-d3f8-4515-b147-85ebdcb25b9f",
+    "name": "Vexen",
+    "attributes": {
+      "rank": 55,
+      "power": 156,
+      "speed": 75,
+      "intelligence": 93,
+      "agility": 75,
+      "endurance": 236
+    }
+  }
+]
