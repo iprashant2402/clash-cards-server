@@ -1,14 +1,15 @@
 import { Service } from "typedi";
-import { PlayerDto, GameActionDto } from "../models/dtos";
 import Game from "../services/Game";
+import { GameAction } from "../models/GameAction";
+import { GameConstuctorParams } from "../models/Game";
 
 @Service()
 export class GameManager {
   private games: Map<string, Game> = new Map();
 
-  createGame(gameType: string): string {
+  createGame(params: Omit<GameConstuctorParams, "id">): string {
     const gameId = this.generateGameId();
-    this.games.set(gameId, new Game(gameId, gameType));
+    this.games.set(gameId, new Game({ ...params, id: gameId }));
     return gameId;
   }
 
@@ -16,15 +17,7 @@ export class GameManager {
     return this.games.get(gameId);
   }
 
-  addPlayer(gameId: string, player: PlayerDto): boolean {
-    const game = this.games.get(gameId);
-    if (game) {
-      return game.addPlayer(player);
-    }
-    return false;
-  }
-
-  updateGameState(gameId: string, action: GameActionDto): void {
+  updateGameState(gameId: string, action: GameAction): void {
     const game = this.games.get(gameId);
     if (game) {
       game.applyAction(action);
@@ -35,7 +28,7 @@ export class GameManager {
     const game = this.games.get(gameId);
     if (game) {
       game.removePlayer(playerId);
-      if (game.players.length === 0) {
+      if (game.playerCount === 0) {
         this.games.delete(gameId);
       }
     }
@@ -43,7 +36,7 @@ export class GameManager {
 
   findGameByPlayerId(playerId: string): string | null {
     for (const [gameId, game] of this.games.entries()) {
-      if (game.players.some((p: PlayerDto) => p.id === playerId)) {
+      if (game.players[playerId]) {
         return gameId;
       }
     }

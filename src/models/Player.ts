@@ -1,4 +1,4 @@
-export type PlayerState = "active" | "evicted" | "winner" | "abandoned";
+export type PlayerState = "active" | "lost" | "winner" | "abandoned_game";
 
 interface Player {
   id: string;

@@ -1,42 +1,36 @@
 import { Service } from "typedi";
 import { GameManager } from "../utils/gameManager";
-import { PlayerDto, GameActionDto } from "../models/dtos";
+import Player from "../models/Player";
+import { GameAction } from "../models/GameAction";
+import { CardSetId } from "../models/CardSet";
+import {
+  GameConstuctorParams,
+  GameDTO,
+  RestrictedGameState,
+} from "../models/Game";
+import Game from "./Game";
 
 @Service()
 export class GameService {
   constructor(private readonly gameManager: GameManager) {}
 
-  async createGame(gameType: string): Promise<string> {
-    return this.gameManager.createGame(gameType);
+  async createGame(params: Omit<GameConstuctorParams, "id">): Promise<string> {
+    return this.gameManager.createGame(params);
   }
 
-  async addPlayer(
-    gameId: string,
-    player: PlayerDto
-  ): Promise<{ success: boolean; game?: any }> {
-    const game = this.gameManager.getGame(gameId);
-    if (game && game.players.length < 4) {
-      const success = this.gameManager.addPlayer(gameId, player);
-      if (success) {
-        return { success: true, game: game.toJSON() };
-      }
-    }
-    return { success: false };
-  }
-
-  async updateGameState(gameId: string, action: GameActionDto): Promise<void> {
+  async updateGameState(gameId: string, action: GameAction): Promise<void> {
     this.gameManager.updateGameState(gameId, action);
   }
 
-  async getGame(gameId: string): Promise<any | null> {
+  async getGame(gameId: string): Promise<Game | undefined> {
     const game = this.gameManager.getGame(gameId);
-    return game ? game.toJSON() : null;
+    return game;
   }
 
   async getGameForPlayer(
     gameId: string,
     playerId: string
-  ): Promise<any | null> {
+  ): Promise<RestrictedGameState | null> {
     const game = this.gameManager.getGame(gameId);
     return game ? game.toJSONForPlayer(playerId) : null;
   }
