@@ -1,4 +1,4 @@
-import { Card, CardSetId } from "./CardSet";
+import { Card, CardSet, CardSetId } from "./CardSet";
 import Player from "./Player";
 
 export interface CardsState {
@@ -7,19 +7,38 @@ export interface CardsState {
 
 export interface GameConstuctorParams {
   id: string;
-  players: Player[];
-  state: any;
-  cardSet: CardSetId;
+  cardSetId: CardSetId;
+  type: GameType;
 }
 
-export interface IGame {
+export enum GameType {
+  DUAL = "DUAL",
+  TRIPLE = "TRIPLE",
+  QUAD = "QUAD",
+}
+
+export type GameState = "waiting_players" | "playing" | "ended";
+
+export interface GameDTO {
   id: string;
-  cardSet: CardSetId;
-  players: Player[];
+  cardSet: CardSet;
+  players: { [playerId: string]: Player };
   cards: CardsState;
   winner?: Player | null;
+  gameState: GameState;
+  currentPlayerIndex: number;
+  type: GameType;
+  lastTurnResult?: GameActionResult;
+  playerOrder: string[];
 }
 
-export interface RestrictedGameState extends Omit<IGame, "cards"> {
+export interface GameActionResult {
+  wonByPlayerId: string;
+  cardsCollected: Card[];
+}
+
+export interface RestrictedGameState
+  extends Omit<GameDTO, "cards" | "cardSet" | "playerOrder"> {
   cards: Card[];
+  cardSetId: CardSetId;
 }

@@ -1,21 +1,18 @@
-export interface PlayerDto {
-  id: string;
-  name: string;
-  state: string;
-}
-
-export interface GameActionDto {
-  // Define properties based on your game rules
-  type: string;
-  payload: any;
-}
+import { CardSetId } from "./CardSet";
+import { GameType } from "./Game";
 
 export interface JoinGameDto {
   gameId: string;
   playerName: string;
+  playerId: string;
 }
 
 export interface FetchGameStateDto {
   gameId: string;
   playerId: string;
+}
+
+export interface CreateGamePayload {
+  cardSetId: CardSetId;
+  type: GameType;
 }

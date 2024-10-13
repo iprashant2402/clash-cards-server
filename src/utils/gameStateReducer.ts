@@ -1,10 +1,9 @@
 import { Card } from "../models/CardSet";
-import Game from "../services/Game";
 import { GameAction } from "../models/GameAction";
-import { IGame } from "../models/Game";
+import { GameActionResult, GameDTO } from "../models/Game";
 
-export const gameStateReducer = (currentState: IGame, action: GameAction) => {
-  const updatedState = { ...currentState } as IGame;
+export const gameStateReducer = (currentState: GameDTO, action: GameAction) => {
+  const updatedState = { ...currentState } as GameDTO;
 
   switch (action.type) {
     case "PLAY_CARD":
@@ -14,7 +13,7 @@ export const gameStateReducer = (currentState: IGame, action: GameAction) => {
   return updatedState;
 };
 
-const playCardActionHandler = (state: IGame, action: GameAction) => {
+const playCardActionHandler = (state: GameDTO, action: GameAction) => {
   const { attributeSelected } = action;
   // Get the selected attribute value for each active player's top card
   const playerTopCards: { [key: string]: Card } = {};
@@ -22,7 +21,7 @@ const playCardActionHandler = (state: IGame, action: GameAction) => {
   let winningPlayerId: string | null = null;
 
   for (const player in state.cards) {
-    const playerObj = state.players.find((p) => p.id === player);
+    const playerObj = state.players[player];
     if (
       playerObj &&
       playerObj.state === "active" &&
@@ -39,6 +38,10 @@ const playCardActionHandler = (state: IGame, action: GameAction) => {
   }
 
   if (winningPlayerId) {
+    const result: GameActionResult = {
+      wonByPlayerId: winningPlayerId,
+      cardsCollected: Object.values(playerTopCards),
+    };
     // Move top cards to the bottom of the winning player's deck
     for (const player in playerTopCards) {
       const card = playerTopCards[player];
@@ -48,6 +51,12 @@ const playCardActionHandler = (state: IGame, action: GameAction) => {
       } else {
         state.cards[winningPlayerId].push(card); // Add to bottom of winner's deck
       }
+      // Check if the player's deck is empty and mark them as lost if so
+      if (state.cards[player].length === 0) {
+        state.players[player].state = "lost";
+        state.playerOrder = state.playerOrder.filter((id) => id !== player);
+      }
     }
+    state.lastTurnResult = result;
   }
 };
